@@ -5,6 +5,18 @@ More details can be found on [werkzeug wiki](https://werkzeug.palletsprojects.co
 
 # Usage
 This script only uses native python3 libraries, thus no need for additional installation.
+```
+~/pentest/werkzeug2hashcat ☿ python3 werkzeug2hashcat.py -h
+usage: werkzeug2hashcat.py [-h] [-s HASH] [-l HASHLIST]
+
+Process PBKDF2 hash(es) from input and convert to applicable hashcat format.
+
+options:
+  -h, --help            show this help message and exit
+  -s HASH, --hash HASH  Single PBKDF2 Werkzeug hash to process.
+  -l HASHLIST, --hashlist HASHLIST
+                        File containing PBKDF2 Werkzeug hashes to process, one per line.
+```
 
 ## Converting Single Hash
 ```bash
